@@ -1,10 +1,15 @@
 import React from 'react'
 import {render} from 'react-dom'
-import {SkiDayList} from './components/SkiDayList'
-
+//import {SkiDayList} from './components/SkiDayList'
+import {SkiDayCount} from './components/SkiDayCount'
 window.React = React
 
 render(
+	<SkiDayCount backcountry={false}/>,
+	document.getElementById('react-container')
+)
+
+/*render(
 	<SkiDayList days={
 		[
 			{
@@ -29,4 +34,4 @@ render(
 	}/>,
 
 	document.getElementById('react-container')
-)
+)*/
