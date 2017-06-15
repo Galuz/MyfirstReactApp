@@ -1,37 +1,18 @@
 import React from 'react'
 import {render} from 'react-dom'
 //import {SkiDayList} from './components/SkiDayList'
-import {SkiDayCount} from './components/SkiDayCount'
+//import {SkiDayCount} from './components/SkiDayCount'
+import { App } from './components/App'
 window.React = React
 
-render(
+/*render(
 	<SkiDayCount backcountry={false}/>,
 	document.getElementById('react-container')
-)
+)*/
 
-/*render(
-	<SkiDayList days={
-		[
-			{
-				resort: "squaw Valley",
-				date: new Date("1/2/2016"),
-				powder: true,
-				backcountry: false
-			},
-			{
-				resort: "kirkwood",
-				date: new Date("3/28/2016"),
-				powder: false,
-				backcountry: false
-			},
-			{
-				resort: "Mt. Tallac",
-				date: new Date("4/2/2016"),
-				powder: false,
-				backcountry: true
-			}
-		]
-	}/>,
+render(
+	<App />,
+	//si pasas el array sin datos debe salir un error, si mandas un string debe salir otro error
 
 	document.getElementById('react-container')
-)*/
+)
